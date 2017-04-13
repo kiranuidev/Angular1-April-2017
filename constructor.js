@@ -7,9 +7,10 @@
             return "xxx-xxx-"+pan.substring(6,10)
         }
     }
-    
+    Person.suffix="MR.";//static member of the person.
    
     var employee = new Person();
+    
     employee.salary="";
     
     
@@ -18,6 +19,7 @@
     //employee is not a function/constructor.
     var manager = new Object(employee);
     console.log(manager);
+    Person.prototype.lastName="";
     
 })();
 
